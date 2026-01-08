@@ -5,9 +5,9 @@ import {
   Settings, ChevronRight, TreePine, Leaf, Menu, X,
   Brain, Target, Clock, Sparkles, ArrowRight, Plus,
   Check, RefreshCw, Search, ExternalLink, Building2,
-  Mountain, TrendingUp, FileText, Send
+  Mountain, TrendingUp, FileText, Send, Globe, ChevronDown
 } from 'lucide-react';
-import { frameworksData, terminologyData, projectScopeData, riskCategories, sectors } from './data/content';
+import { frameworksData, terminologyData, projectScopeData, riskCategories, sectors, ukPolicyData, globalPolicyData } from './data/content';
 import UKMapExplorer from './components/UKMapExplorer';
 
 // ============ DASHBOARD ============
@@ -576,6 +576,8 @@ export default function App() {
   const tabs = [
     { id: 'dashboard', name: 'Dashboard', icon: Home },
     { id: 'frameworks', name: 'Frameworks', icon: Layers },
+    { id: 'policy', name: 'Policy Library', icon: FileText },
+    { id: 'news', name: 'News & Updates', icon: TrendingUp },
     { id: 'terminology', name: 'Terminology', icon: BookOpen },
     { id: 'scoping', name: 'Project Scoping', icon: Calculator },
     { id: 'risks', name: 'Risk Screening', icon: Shield },
