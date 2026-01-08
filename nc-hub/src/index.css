@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  @apply bg-slate-950 text-white antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
+
+/* MapLibre overrides */
+.maplibregl-popup-content {
+  @apply bg-slate-800 text-white rounded-lg shadow-xl border border-slate-700 p-0;
+}
+
+.maplibregl-popup-tip {
+  border-top-color: rgb(30 41 59) !important;
+}
+
+.maplibregl-ctrl-group {
+  @apply bg-slate-800 border-slate-700;
+}
+
+.maplibregl-ctrl-group button {
+  @apply bg-slate-800 border-slate-700;
+}
+
+.maplibregl-ctrl-group button:hover {
+  @apply bg-slate-700;
+}
+
+.maplibregl-ctrl-attrib {
+  @apply bg-slate-900/80 text-slate-400;
+}
